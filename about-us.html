@@ -2,283 +2,351 @@
 <html lang="zxx">
 
 <!-- Mirrored from studioux.in/studiouxhtmltemplate/interior&furniture/html/gray-version/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 17:21:36 GMT -->
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interior & Furniture Multipurpose Html Template">
-<meta name="keywords" content="Interior & Furniture Multipurpose Html Template">
-<meta name="author" content="">
-<title>Interior &amp; Furniture</title>
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-<!--css-->
-<link href="assets/css/all-css.css" rel="stylesheet" type="text/css">
-<!--css-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interior & Furniture Multipurpose Html Template">
+  <meta name="keywords" content="Interior & Furniture Multipurpose Html Template">
+  <meta name="author" content="">
+  <title>Interior &amp; Furniture</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logoms.png">
+
+  <!--css-->
+  <link href="assets/css/all-css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    #whatsappBtn {
+      position: fixed;
+      top: 140px;
+      /* distance from top */
+      right: 20px;
+      /* distance from right */
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    #whatsappBtn img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #whatsappBtn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <style>
+    .bg-light {
+      --bs-bg-opacity: 1;
+      background-color: rgb(23 53 83 / 76%) !important;
+    }
+
+    /* Social Media Icons - fixed left center */
+    .social-icons1 {
+      position: fixed;
+      top: 20%;
+      left: 10px;
+      /* transform: translateY(-50%); */
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+
+    .social-icons1 a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    /* Brand Colors */
+    .facebook {
+      background: #1877f2;
+    }
+
+    .instagram {
+      background: #e4405f;
+    }
+
+    .twitter {
+      background: #1da1f2;
+    }
+
+    .whatsapp {
+      background: #25d366;
+    }
+
+    .youtube {
+      background: #ff0000;
+    }
+
+    .social-icons1 a:hover {
+      opacity: 0.8;
+    }
+  </style>
+  <!--css-->
 </head>
+
 <body id="page-top" class="index">
-<header>
-  <!--navbar-->
-  <div class="container">
-    <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-default fixed-top" aria-label="Sixth navbar example">
-      <div class="container page-scroll"> <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" title=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarsExample06">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html">Home</a></li>
-                <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown active"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="about-us.html">ABOUT US</a></li>
-                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Projects </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="projects-contained-3-cols.html">Contained Style 3 cols</a></li>
-                <li><a class="dropdown-item" href="projects.html">Wide Style  4 cols </a></li>
-                <li><a class="dropdown-item" href="projects-carousel-3-cols.html">carousel 3 cols</a></li>
-                <li><a class="dropdown-item" href="projects-carousel-4-cols.html">carousel 4 cols</a></li>
-                <li><a class="dropdown-item" href="projects-gallery.html">Projects Gallery </a></li>
-                <li><a class="dropdown-item" href="project-single.html">Project Single</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Services </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="service-1.html">Service Version 1</a></li>
-                <li><a class="dropdown-item" href="service-tab.html"> Service Version 2</a></li>
-                <li><a class="dropdown-item" href="services-style-3.html">Service Version 3</a></li>
-                <li><a class="dropdown-item" href="service-version-4.html">Service Version 4</a></li>
-                <li><a class="dropdown-item" href="service-version-5.html">Service Version 5</a></li>
-                <li><a class="dropdown-item" href="service-version-6.html">Service Version 6</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">BLOG </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="blog.html"> Blog Left</a></li>
-                <li><a class="dropdown-item" href="blog-page-2.html">Blog Version 2 </a></li>
-                <li><a class="dropdown-item" href="blog-in.html">Blog detail</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a href="contact-us.html" class="nav-link" style="background:none">CONTACT US</a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!--navbar-->
-</header>
-<!--main-->
-<main>
-  <section id="subheader" class="subheader6" data-speed="8" data-type="background" >
+  <header>
+    <!--navbar-->
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center" data-aos="fade-right"> ABOUT US </h1>
-        </div>
-      </div>
-    </div>
-    <div class="crumb">
-      <div class="container">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="sep">/</li>
-          <li>ABOUT US</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!--subheader-->
-  <div id="content" class="no-top no-bottom">
-    <!--about-us-->
-    <section id="section-about" class="side-bg no-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center div-right text-center" data-aos="fade-up" data-aos-delay="100"> <img src="assets/img/bg-side-1.jpg" class="img-fluid" alt="img" title="img"> </div>
-          <div class="col-md-6"  data-aos="fade-up"  data-aos-delay="200">
-            <h2>Best Interior Design </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="mb">aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-          </div>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </section>
-    <!--about-us-->
-    <div class="clearfix"></div>
-  </div>
-  <!--testimonial-->
-  <section id="section-testimonial" class="text-light container-fluid float-start" data-aos="fade-up">
-    <h2 class="text-center"> Customer Says </h2>
-    <div class="separator"><span><i class="fa fa-circle"></i></span></div>
-    <div class="container content">
-      <div class="owl-carousel1 owl-carousel owl-theme">
-        <div class="item">
-          <blockquote class="custom-quote">
-            <div class="row">
-              <div class="col-md-4  col-sm-4 text-center"><img src="assets/img/img1.jpg" alt="img" title="img" class="img-fluid rounded-circle"></div>
-              <div class="col-md-8  col-sm-8"> <span class="fa fa-quote-left"></span>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cons
-                  entum tempor. Duis porta lectus ut dui consequat, </p>
-                <footer>
-                  <h6>JOHNATHAN DOE <span>DESIGNER, THEME DESIGNER</span></h6>
-                </footer>
-              </div>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="custom-quote">
-            <div class="row">
-              <div class="col-md-4  col-sm-4 text-center"><img src="assets/img/img2.jpg" alt="img" title="img" class="img-fluid rounded-circle"></div>
-              <div class="col-md-8  col-sm-8"> <span class="fa fa-quote-left"></span>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cons
-                  entum tempor. Duis porta lectus ut dui consequat, </p>
-                <footer>
-                  <h6>JOHNATHAN DOE <span>DESIGNER, THEME DESIGNER</span></h6>
-                </footer>
-              </div>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="custom-quote">
-            <div class="row">
-              <div class="col-md-4 col-sm-4 text-center">
-              <img src="assets/img/img3.jpg" title="img" alt="img" class="img-fluid rounded-circle"></div>
-              <div class="col-md-8 col-sm-8"> <span class="fa fa-quote-left"></span>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cons
-                  entum tempor. Duis porta lectus ut dui consequat, </p>
-                <footer>
-                  <h6>JOHNATHAN DOE <span>DESIGNER, THEME DESIGNER</span></h6>
-                </footer>
-              </div>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="custom-quote">
-            <div class="row">
-              <div class="col-md-4 col-sm-4 text-center" ><img src="assets/img/img4.jpg" alt="img" title="img" class="img-fluid rounded-circle"></div>
-              <div class="col-md-8 col-sm-8"> <span class="fa fa-quote-left"></span>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cons
-                  entum tempor. Duis porta lectus ut dui consequat, </p>
-                <footer>
-                  <h6>JOHNATHAN DOE <span>DESIGNER, THEME DESIGNER</span></h6>
-                </footer>
-              </div>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="custom-quote">
-            <div class="row">
-              <div class="col-md-4 col-sm-4 text-center"><img src="assets/img/img1.jpg" alt="img" title="img" class="img-fluid rounded-circle"></div>
-              <div class="col-md-8 col-sm-8"> <span class="fa fa-quote-left"></span>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cons
-                  entum tempor. Duis porta lectus ut dui consequat, </p>
-                <footer>
-                  <h6>JOHNATHAN DOE <span>DESIGNER, THEME DESIGNER</span></h6>
-                </footer>
-              </div>
-            </div>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote class="custom-quote">
-            <div class="row">
-              <div class="col-md-4 col-sm-4 text-center"><img src="assets/img/img2.jpg" alt="img" title="img" class="img-fluid rounded-circle"></div>
-              <div class="col-md-8 col-sm-8"> <span class="fa fa-quote-left"></span>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cons
-                  entum tempor. Duis porta lectus ut dui consequat, </p>
-                <footer>
-                  <h6>JOHNATHAN DOE <span>DESIGNER, THEME DESIGNER</span></h6>
-                </footer>
-              </div>
-            </div>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </section>
-  <!--testimonial-->
-  <!--Contact us-->
-  <section id="call-to-action" class="call-to-action bg-color dark text-center container-fluid float-start">
-    <h6 data-aos="fade-up"><a href="contact-us.html" class="btn btn-line-black btn-big hvr-sweep-to-left">Contact us</a></h6>
-  </section>
-  <!--Contact us-->
-</main>
-<!--main-->
-<div class="clearfix"></div>
-<!--footer-->
-<footer>
-  <!--footer-div-->
-  <div class="footer-div">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up">
-          <div><img src="assets/img/logo.png" class="logo-small img-fluid" alt="img" title="img"></div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="widget widget_recent_post">
-            <h3>Latest News</h3>
-            <ul>
-              <li><a href="#">Pellentesque faucibus quam at enim varius gravida.</a></li>
-              <li><a href="#">Ut et lorem nec augue gravida pharetra sed ac enim.</a></li>
-              <li><a href="#">Vestibulum vestibulum erat eu lorem semper.</a></li>
-              <li><a href="#">Vestibulum cursus ex a orci hendrerit, non.</a></li>
-              <li><a href="#">In eu eros tincidunt, luctus diam non, semper quam.</a></li>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-default fixed-top"
+        aria-label="Sixth navbar example">
+        <div class="container page-scroll"> <a class="navbar-brand" href="index.html"><img src="assets/img/logoms.png"
+              alt="" title="" style="height: 95px;margin: -40px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+            aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation"> <span
+              class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarsExample06">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              <li class="nav-item"><a class="nav-link" style="background:none" href="index.html">Home</a> </li>
+              <li class="nav-item"><a class="nav-link" style="background:none" href="about-us.html">ABOUT US</a> </li>
+              <li class="nav-item"><a class="nav-link" style="background:none" href="projects-gallery.html"> Gallery
+                </a> </li>
+              <li class="nav-item"><a class="nav-link" style="background:none" href="service-version-6.html">Service
+                </a> </li>
+              <!-- <li class="nav-item"><a class="nav-link" style="background:none" href="blog.html"> Blog </a> </li> -->
+              <li class="nav-item"><a href="contact-us.html" class="nav-link" style="background:none">CONTACT US</a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" data-aos-delay="600">
-          <h3>Contact Us</h3>
-          <div class="widget widget-address">
-            <address>
-            <span>385 "SHUBHAM" NEW ADARSH COLONY Near
-            MR4 Road, I/F Gajannan Park </span> <span><strong>Phone:</strong>(208) 333 9296</span> <span><strong>Fax:</strong>(208) 333 9298</span> <span><strong>Email:</strong><a href="mailto:contact@StudioUX.com">contact@StudioUX.com</a></span> <span><strong>Web:</strong><a href="#">http://interior&furniture.com</a></span>
-            </address>
+      </nav>
+    </div>
+    <!--navbar-->
+  </header>
+  <div class="social-icons1">
+    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+  </div>
+
+   <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/8543904001" target="_blank" id="whatsappBtn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+  <!--main-->
+  <main>
+    <section id="subheader" class="subheader6" data-speed="8" data-type="background">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center" data-aos="fade-right"> ABOUT US </h1>
           </div>
         </div>
       </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 footer-c"> &copy; Copyright 2023  - Interior &amp; Furniture Design by Studio UX </div>
-        <div class="col-md-4  col-sm-6 footer-c text-end">
-          <div class="social-icons"> <a href="#"><i class="fa fa-facebook fa-lg"></i></a> <a href="#"><i class="fa fa-twitter fa-lg"></i></a> <a href="#"><i class="fa fa-rss fa-lg"></i></a> <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> <a href="#"><i class="fa fa-skype fa-lg"></i></a> <a href="#"><i class="fa fa-dribbble fa-lg"></i></a> </div>
+      <div class="crumb">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="sep">/</li>
+            <li>ABOUT US</li>
+          </ul>
         </div>
       </div>
+    </section>
+    <!--subheader-->
+    <div id="content" class="no-top no-bottom">
+      <!--about-us-->
+      <section id="section-about" class="side-bg no-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center div-right text-center" data-aos="fade-up" data-aos-delay="100"> <img
+                src="assets/image/about.webp" class="img-fluid" alt="img" title="img"> </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <h2>POP Ceiling Designs </h2>
+              <p><!-- Content -->
+              <div style="flex:1; min-width:300px;">
+
+                <p style="font-size:16px; color:#555; line-height:1.7; margin-bottom:20px;">
+                  We are <strong>POP Ceiling Designs Co.</strong>, a team of highly skilled designers and craftsmen
+                  creating exquisite false ceiling solutions combining art, functionality, and innovation. Since 2025,
+                  we have served residential, commercial, and hospitality clients with the belief that every ceiling is
+                  an opportunity to transform space and experience.
+                </p>
+                <h3 style="font-size:22px; color:#333; margin-bottom:10px;">Our Mission</h3>
+                <ul style="color:#555; line-height:1.7; margin-bottom:20px; padding-left:20px;">
+                  <li>Bring beauty and elegance into your space through modern POP ceiling designs.</li>
+                  <li>Innovate continuously with high-quality materials and latest techniques.</li>
+                  <li>Ensure on-time delivery, transparent pricing, and craftsmanship.</li>
+                </ul>
+                <h3 style="font-size:22px; color:#333; margin-bottom:10px;">What Sets Us Apart</h3>
+                <ul style="color:#555; line-height:1.7; padding-left:20px;">
+                  <li>Expert designers & installers with years of experience.</li>
+                  <li>Custom & 3D designs tailored to your style.</li>
+                  <li>High-quality, durable, moisture and fire-resistant materials.</li>
+                  <li>Customer-centric approach from consultation to installation.</li>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <!--about-us-->
+      <div class="clearfix"></div>
     </div>
-  </div>
-  <!--footer-div-->
-</footer>
-<!--footer-->
-<!-- Js File -->
-<script src="assets/aos/aos.js"></script>
-<link href="assets/aos/aos.css" rel="stylesheet">
-<script src="assets/aos/aos-script.js"></script>
-<script  src="assets/js/jquery-2.2.4.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/classie.js"></script>
-<script src="assets/js/cbpAnimatedHeader.js"></script>
-<!--owl-->
-<script src="assets/owlcarousel/owl.carousel.js"></script>
-<script  src="assets/js/theme.js"></script>
-<script  src="assets/js/scrolltopcontrol.js"></script>
-<!-- Js File -->
+    <!--testimonial-->
+    <section id="section-testimonial" class="text-light">
+      <h2 class="text-center" data-aos="fade-right"> Customer Says </h2>
+      <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+      <div class="container content">
+        <div class="owl-carousel1 owl-carousel owl-theme" data-aos="fade-up">
+          <div class="item">
+            <blockquote class="custom-quote">
+              <div class="row">
+                <div class="col-md-4  col-sm-4 text-center"><img src="assets/img/img1.jpg" alt="img" title="img"
+                    class="img-fluid rounded-circle"></div>
+                <div class="col-md-8  col-sm-8"> <span class="fa fa-quote-left"></span>
+                  <p> We wanted something unique for our hotel lobby, and the POP ceiling design turned out stunning.
+                    Guests often compliment the modern look. Truly exceptional work!, </p>
+                  <footer>
+                    <h6>Vikram Singh <span> Hotel Manager</span></h6>
+                  </footer>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="item">
+            <blockquote class="custom-quote">
+              <div class="row">
+                <div class="col-md-4 col-sm-4 text-center"><img src="assets/img/img3.jpg" title="img" alt="img"
+                    class="img-fluid rounded-circle"></div>
+                <div class="col-md-8 col-sm-8"> <span class="fa fa-quote-left"></span>
+                  <p> The POP ceiling design completely changed the look of my living room. The 3D patterns with LED
+                    lights made it look elegant and modern. Highly recommended! </p>
+                  <footer>
+                    <h6>Amit Sharma <span>Residential Client</span></h6>
+                  </footer>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <div class="item">
+            <blockquote class="custom-quote">
+              <div class="row">
+                <div class="col-md-4 col-sm-4 text-center"><img src="assets/img/img4.jpg" alt="img" title="img"
+                    class="img-fluid rounded-circle"></div>
+                <div class="col-md-8 col-sm-8"> <span class="fa fa-quote-left"></span>
+                  <p> They did an amazing job with our office ceilings. The team was professional, on time, and
+                    delivered exactly what we wanted. Our workspace feels premium now </p>
+                  <footer>
+                    <h6>Ritika Mehra <span>Office Owner</span></h6>
+                  </footer>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--testimonial-->
+    <!--Contact us-->
+    <section id="call-to-action" class="call-to-action bg-color dark text-center container-fluid float-start">
+      <h6 data-aos="fade-up"><a href="contact-us.html" class="btn btn-line-black btn-big hvr-sweep-to-left">Contact
+          us</a></h6>
+    </section>
+    <!--Contact us-->
+  </main>
+  <!--main-->
+  <div class="clearfix"></div>
+  <!--footer-->
+  <footer>
+    <!--footer-div-->
+    <div class="footer-div">
+      <div class="">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up">
+            <div><img src="assets/img/logoms.png" class="logo-small img-fluid" alt="img" title="img"
+                style="height: 150px;"> <span style="font-size: 28px;color: green;">M & S Official</span> </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="widget widget_recent_post">
+                <h3>Latest News</h3>
+                <ul>
+                  <li><a href="#">New 3D POP Ceiling Collection Launched (2025).</a></li>
+                  <li><a href="#">LED Cove Lighting with POP – Most Demanded in 2025</a></li>
+                  <li><a href="#">Eco-Friendly POP Materials Introduced</a></li>
+                  <li><a href="#">Special Offer on False Ceiling Services</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" data-aos-delay="600">
+              <h3>Contact Us</h3>
+              <div class="widget widget-address">
+                <address>
+                  <span>Building No. 278:88 Road/Street: Aishbagh Road Nearby Landmark: Bharat Dharamkanta Locality/Sub
+                    Locality: Habib Nagar Moti Jheel
+                    District: Lucknow
+                    City/Town/Village: Lucknow e
+                    State: Uttar Pradesh
+                    PIN Code: 220004</span> <span><strong>Phone:</strong>(+91) 7355645091</span>
+                  <span><strong>Email:</strong><a href="mailto:contact@StudioUX.com">contact@StudioUX.com</a></span>
+                  <span><strong>Web:</strong><a href="#">http://interior&furniture.com</a></span>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 footer-c"> &copy; Copyright 2023 - Interior &amp; POP Design by MS Official
+            </div>
+            <div class="col-md-4  col-sm-6 footer-c text-end">
+              <div class="social-icons"> <a href="#"><i class="fa fa-facebook fa-lg"></i></a> <a href="#"><i
+                    class="fa fa-twitter fa-lg"></i></a> <a href="#"><i class="fa fa-rss fa-lg"></i></a> <a href="#"><i
+                    class="fa fa-google-plus fa-lg"></i></a> <a href="#"><i class="fa fa-skype fa-lg"></i></a> <a
+                  href="#"><i class="fa fa-dribbble fa-lg"></i></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-div-->
+  </footer>
+  <!--footer-->
+
+  <!-- Js File -->
+  <script src="assets/aos/aos.js"></script>
+  <link href="assets/aos/aos.css" rel="stylesheet">
+  <script src="assets/aos/aos-script.js"></script>
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/cbpAnimatedHeader.js"></script>
+  <!--owl-->
+  <script src="assets/owlcarousel/owl.carousel.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/scrolltopcontrol.js"></script>
+  <!-- Js File -->
 </body>
 
 <!-- Mirrored from studioux.in/studiouxhtmltemplate/interior&furniture/html/gray-version/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 17:21:37 GMT -->
+
 </html>

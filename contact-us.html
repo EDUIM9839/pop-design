@@ -13,6 +13,76 @@
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 <!--css-->
 <link href="assets/css/all-css.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    #whatsappBtn {
+      position: fixed;
+      top: 140px;
+      /* distance from top */
+      right: 20px;
+      /* distance from right */
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    #whatsappBtn img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #whatsappBtn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+<style>
+  .bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgb(23 53 83 / 76%) !important;
+}
+  /* Social Media Icons - fixed left center */
+    .social-icons1 {
+      position: fixed;
+      top: 20%;
+      left: 10px;
+      /* transform: translateY(-50%); */
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+
+    .social-icons1 a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    /* Brand Colors */
+    .facebook { background: #1877f2; }
+    .instagram { background: #e4405f; }
+    .twitter { background: #1da1f2; }
+    .whatsapp { background: #25d366; }
+    .youtube { background: #ff0000; }
+
+    .social-icons1 a:hover {
+      opacity: 0.8;
+    }
+</style>
 <!--css-->
 </head>
 <body id="page-top" class="index">
@@ -21,51 +91,16 @@
   <!--navbar-->
   <div class="container">
     <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-default fixed-top" aria-label="Sixth navbar example">
-      <div class="container page-scroll"> <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" title=""></a>
+      <div class="container page-scroll"> <a class="navbar-brand" href="index.html"><img src="assets/img/logoms.png" alt="" title="" style="height: 100px;margin: -45px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarsExample06">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown active"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html">Home</a></li>
-                <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="about-us.html">ABOUT US</a></li>
-                <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Projects </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="projects-contained-3-cols.html">Contained Style 3 cols</a></li>
-                <li><a class="dropdown-item" href="projects.html">Wide Style  4 cols </a></li>
-                <li><a class="dropdown-item" href="projects-carousel-3-cols.html">carousel 3 cols</a></li>
-                <li><a class="dropdown-item" href="projects-carousel-4-cols.html">carousel 4 cols</a></li>
-                <li><a class="dropdown-item" href="projects-gallery.html">Projects Gallery </a></li>
-                <li><a class="dropdown-item" href="project-single.html">Project Single</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Services </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="service-1.html">Service Version 1</a></li>
-                <li><a class="dropdown-item" href="service-tab.html"> Service Version 2</a></li>
-                <li><a class="dropdown-item" href="services-style-3.html">Service Version 3</a></li>
-                <li><a class="dropdown-item" href="service-version-4.html">Service Version 4</a></li>
-                <li><a class="dropdown-item" href="service-version-5.html">Service Version 5</a></li>
-                <li><a class="dropdown-item" href="service-version-6.html">Service Version 6</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">BLOG </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="blog.html"> Blog Left</a></li>
-                <li><a class="dropdown-item" href="blog-page-2.html">Blog Version 2 </a></li>
-                <li><a class="dropdown-item" href="blog-in.html">Blog detail</a></li>
-              </ul>
-            </li>
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           
+            <li class="nav-item"><a class="nav-link" style="background:none" href="index.html">Home</a> </li>
+            <li class="nav-item"><a class="nav-link" style="background:none" href="about-us.html">ABOUT US</a> </li>
+            <li class="nav-item"><a class="nav-link" style="background:none" href="projects-gallery.html"> Gallery </a> </li>
+            <li class="nav-item"><a class="nav-link" style="background:none" href="service-version-6.html">Service </a> </li>
+            <!-- <li class="nav-item"><a class="nav-link" style="background:none" href="blog.html"> Blog </a> </li> -->
             <li class="nav-item"><a href="contact-us.html" class="nav-link" style="background:none">CONTACT US</a> </li>
           </ul>
         </div>
@@ -74,7 +109,20 @@
   </div>
   <!--navbar-->
 </header>
+
+<div class="social-icons1">
+    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+  </div>
 <!--header-->
+
+ <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/8543904001" target="_blank" id="whatsappBtn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
 <!--main-->
 <main>
   <!--subheader-->
@@ -109,21 +157,21 @@
               <div class="col-md-6">
                 <div id="name_error" class="error">Please enter your name.</div>
                 <div>
-                  <input name="name" id="name" class="form-control" placeholder="Your Name" type="text">
+                  <input name="name" id="name" class="form-control text-dark" placeholder="Your Name" type="text">
                 </div>
                 <div id="email_error" class="error">Please enter your valid E-mail ID.</div>
                 <div>
-                  <input name="email" id="email" class="form-control" placeholder="Your Email" type="text">
+                  <input name="email" id="email" class="form-control text-dark" placeholder="Your Email" type="text">
                 </div>
                 <div id="phone_error" class="error">Please enter your phone number.</div>
                 <div>
-                  <input name="phone" id="phone" class="form-control" placeholder="Your Phone" type="text">
+                  <input name="phone" id="phone" class="form-control text-dark" placeholder="Your Phone" type="text">
                 </div>
               </div>
               <div class="col-md-6">
                 <div id="message_error" class="error">Please enter your message.</div>
                 <div>
-                  <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+                  <textarea name="message" id="message" class="form-control text-dark" placeholder="Your Message"></textarea>
                 </div>
               </div>
               <div class="col-md-12">
@@ -140,9 +188,12 @@
           <div class="widget widget_text conact-add">
             <h3>Contact Info</h3>
             <address>
-            <span>385 "SHUBHAM" NEW ADARSH COLONY Near
-            MR4 Road, I/F Gajannan Park
-            Jabalpur - 482001 Madhya Pradesh, INDIA</span> <span><strong>Phone:</strong>(208) 333 9296</span> <span><strong>Fax:</strong>(208) 333 9298</span> <span><strong>Email:</strong><a href="mailto:contact@example.com">contact@example.com</a></span> <span><strong>Web:</strong><a href="#test">http://example.com</a></span> <span><strong>Open</strong>Sunday - Friday 08:00 - 18:00</span>
+            <span>Building No. 278:88 Road/Street: Aishbagh Road Nearby Landmark: Bharat Dharamkanta Locality/Sub
+                  Locality: Habib Nagar Moti Jheel
+                  District: Lucknow
+                  City/Town/Village: Lucknow e
+                  State: Uttar Pradesh
+                  PIN Code: 220004</span> <span><strong>Phone:</strong>+91 7355645091</span>  <span><strong>Email:</strong><a href="mailto:contact@example.com">contact@example.com</a></span> <span><strong>Web:</strong><a href="#test">http://example.com</a></span> <span><strong>Open</strong>Sunday - Friday 08:00 - 18:00</span>
             </address>
           </div>
         </div>
@@ -152,8 +203,8 @@
   </div>
   <!--map-->
   <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.9863602070095!2d79.90812931489332!3d23.170697916590242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b1e678777605%3A0xa184e82b5245da38!2sSRGIT!5e0!3m2!1sen!2sin!4v1526132321949" class="map-css"></iframe>
-  </div>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3559.8311593732983!2d80.90397137420692!3d26.845321988955646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBuilding%20No.%20278%3A88%20Road%2FStreet%3A%20Aishbagh%20Road%20Nearby%20Landmark%3A%20Bharat%20Dharamkanta%20Locality%2FSub%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Locality%3A%20Habib%20Nagar%20Moti%20Jheel%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20District%3A%20Lucknow%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20City%2FTown%2FVillage%3A%20Lucknow%20e%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20State%3A%20Uttar%20Pradesh%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20PIN%20Code%3A%20220004!5e0!3m2!1sen!2sin!4v1757723800069!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   <!--map-->
   <div class="clearfix"></div>
 </main>
@@ -162,21 +213,21 @@
 <footer>
   <!--footer-div-->
   <div class="footer-div">
-    <div class="container">
+    <div class="">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up">
-          <div><img src="assets/img/logo.png" class="logo-small img-fluid" alt="img" title="img"></div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
-        </div>
+          <div><img src="assets/img/logoms.png" class="logo-small img-fluid" alt="img" title="img" style="height: 150px;"> <span style="font-size: 28px;color: green;">M & S Official</span> </div>
+
+           </div>
         <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up"  data-aos-delay="400">
           <div class="widget widget_recent_post">
             <h3>Latest News</h3>
             <ul>
-              <li><a href="#">Pellentesque faucibus quam at enim varius gravida.</a></li>
-              <li><a href="#">Ut et lorem nec augue gravida pharetra sed ac enim.</a></li>
-              <li><a href="#">Vestibulum vestibulum erat eu lorem semper.</a></li>
-              <li><a href="#">Vestibulum cursus ex a orci hendrerit, non.</a></li>
-              <li><a href="#">In eu eros tincidunt, luctus diam non, semper quam.</a></li>
+              <li><a href="#">New 3D POP Ceiling Collection Launched (2025).</a></li>
+              <li><a href="#">LED Cove Lighting with POP – Most Demanded in 2025</a></li>
+              <li><a href="#">Eco-Friendly POP Materials Introduced</a></li>
+              <li><a href="#">Special Offer on False Ceiling Services</a></li>
+              
             </ul>
           </div>
         </div>
@@ -184,8 +235,12 @@
           <h3>Contact Us</h3>
           <div class="widget widget-address">
             <address>
-            <span>385 "SHUBHAM" NEW ADARSH COLONY Near
-            MR4 Road, I/F Gajannan Park </span> <span><strong>Phone:</strong>(208) 333 9296</span> <span><strong>Fax:</strong>(208) 333 9298</span> <span><strong>Email:</strong><a href="mailto:contact@StudioUX.com">contact@StudioUX.com</a></span> <span><strong>Web:</strong><a href="#">http://interior&furniture.com</a></span>
+            <span>Building No. 278:88 Road/Street: Aishbagh Road Nearby Landmark: Bharat Dharamkanta Locality/Sub
+                  Locality: Habib Nagar Moti Jheel
+                  District: Lucknow
+                  City/Town/Village: Lucknow e
+                  State: Uttar Pradesh
+                  PIN Code: 220004</span> <span><strong>Phone:</strong>(+91) 7355645091</span> <span><strong>Email:</strong><a href="mailto:contact@StudioUX.com">contact@StudioUX.com</a></span> <span><strong>Web:</strong><a href="#">http://interior&furniture.com</a></span>
             </address>
           </div>
         </div>
@@ -196,7 +251,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-6 footer-c"> &copy; Copyright 2023  - Interior &amp; Furniture Design by Studio UX </div>
+        <div class="col-md-8 col-sm-6 footer-c"> &copy; Copyright 2023  - Interior &amp; POP Design by MS Official </div>
         <div class="col-md-4  col-sm-6 footer-c text-end">
           <div class="social-icons"> <a href="#"><i class="fa fa-facebook fa-lg"></i></a> <a href="#"><i class="fa fa-twitter fa-lg"></i></a> <a href="#"><i class="fa fa-rss fa-lg"></i></a> <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> <a href="#"><i class="fa fa-skype fa-lg"></i></a> <a href="#"><i class="fa fa-dribbble fa-lg"></i></a> </div>
         </div>

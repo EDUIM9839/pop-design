@@ -2,259 +2,309 @@
 <html lang="en">
 
 <!-- Mirrored from studioux.in/studiouxhtmltemplate/interior&furniture/html/gray-version/projects-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 17:21:43 GMT -->
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interior & Furniture Multipurpose Html Template">
-<meta name="keywords" content="Interior & Furniture Multipurpose Html Template">
-<meta name="author" content="">
-<title>Interior &amp; Furniture</title>
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-<link href="assets/css/all-css.css" rel="stylesheet" media="all">
-<link href="assets/css/imagehover.css" rel="stylesheet" media="all">
+  <meta name="description" content="Interior & Furniture Multipurpose Html Template">
+  <meta name="keywords" content="Interior & Furniture Multipurpose Html Template">
+  <meta name="author" content="">
+  <title>Interior &amp; Furniture</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link href="assets/css/all-css.css" rel="stylesheet" media="all">
+  <link href="assets/css/imagehover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    #whatsappBtn {
+      position: fixed;
+      top: 140px;
+      /* distance from top */
+      right: 20px;
+      /* distance from right */
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    #whatsappBtn img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #whatsappBtn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <style>
+    .bg-light {
+      --bs-bg-opacity: 1;
+      background-color: rgb(23 53 83 / 76%) !important;
+    }
+
+    /* Gallery Grid */
+    #portfoliolist {
+
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .portfolio img {
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox Background */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      text-align: center;
+    }
+
+    /* Lightbox Image */
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Close Button */
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .close:hover {
+      color: #ff0000;
+    }
+
+      /* Social Media Icons - fixed left center */
+    .social-icons1 {
+      position: fixed;
+      top: 20%;
+      left: 10px;
+      /* transform: translateY(-50%); */
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+
+    .social-icons1 a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    /* Brand Colors */
+    .facebook { background: #1877f2; }
+    .instagram { background: #e4405f; }
+    .twitter { background: #1da1f2; }
+    .whatsapp { background: #25d366; }
+    .youtube { background: #ff0000; }
+
+    .social-icons1 a:hover {
+      opacity: 0.8;
+    }
+  </style>
 </head>
+
 <body id="page-top" class="index">
 
-<!--header-->
-<header>
-<!--navbar-->
-<div class="container">
-<nav class="navbar navbar-expand-xl navbar-light bg-light navbar-default fixed-top" aria-label="Sixth navbar example">
-  <div class="container page-scroll"> <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" title=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarsExample06">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.html">Home</a></li>
-            <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about-us.html">ABOUT US</a></li>
-            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-            <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown active"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Projects </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="projects-contained-3-cols.html">Contained Style 3 cols</a></li>
-            <li><a class="dropdown-item" href="projects.html">Wide Style  4 cols </a></li>
-            <li><a class="dropdown-item" href="projects-carousel-3-cols.html">carousel 3 cols</a></li>
-            <li><a class="dropdown-item" href="projects-carousel-4-cols.html">carousel 4 cols</a></li>
-            <li><a class="dropdown-item" href="projects-gallery.html">Projects Gallery </a></li>
-            <li><a class="dropdown-item" href="project-single.html">Project Single</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Services </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="service-1.html">Service Version 1</a></li>
-            <li><a class="dropdown-item" href="service-tab.html"> Service Version 2</a></li>
-            <li><a class="dropdown-item" href="services-style-3.html">Service Version 3</a></li>
-            <li><a class="dropdown-item" href="service-version-4.html">Service Version 4</a></li>
-            <li><a class="dropdown-item" href="service-version-5.html">Service Version 5</a></li>
-            <li><a class="dropdown-item" href="service-version-6.html">Service Version 6</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown"> <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">BLOG </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="blog.html"> Blog Left</a></li>
-            <li><a class="dropdown-item" href="blog-page-2.html">Blog Version 2 </a></li>
-            <li><a class="dropdown-item" href="blog-in.html">Blog detail</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="contact-us.html" class="nav-link" style="background:none">CONTACT US</a> </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</div>
-<!--navbar-->
-</header>
-<!--header-->
-
-<!--main-->
-<main>
-  <!--subheader-->
-  <section id="subheader" class="subheader6" data-speed="8" data-type="background">
+  <!--header-->
+  <header>
+    <!--navbar-->
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center" data-aos="fade-right">Projects</h1>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-default fixed-top"
+        aria-label="Sixth navbar example">
+        <div class="container page-scroll"> <a class="navbar-brand" href="index.html"><img src="assets/img/logoms.png"
+              alt="" title="" style="height: 100px;margin: -45px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+            aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation"> <span
+              class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarsExample06">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              <li class="nav-item"><a class="nav-link" style="background:none" href="index.html">Home</a> </li>
+              <li class="nav-item"><a class="nav-link" style="background:none" href="about-us.html">ABOUT US</a> </li>
+              <li class="nav-item"><a class="nav-link" style="background:none" href="projects-gallery.html"> Gallery
+                </a> </li>
+              <li class="nav-item"><a class="nav-link" style="background:none" href="service-version-6.html">Service
+                </a> </li>
+              <!-- <li class="nav-item"><a class="nav-link" style="background:none" href="blog.html"> Blog </a> </li> -->
+              <li class="nav-item"><a href="contact-us.html" class="nav-link" style="background:none">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--navbar-->
+  </header>
+  <div class="social-icons1">
+    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+  </div>
+  <!--header-->
+ <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/8543904001" target="_blank" id="whatsappBtn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+  <!--main-->
+  <main>
+    <!--subheader-->
+    <section id="subheader" class="subheader6" data-speed="8" data-type="background">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center" data-aos="fade-right">Gallery</h1>
+          </div>
+        </div>
+      </div>
+      <div class="crumb">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="sep">/</li>
+            <li> Gallery </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="projects-gallery">
+        <div class="row">
+          <ul class="grid effect-4" id="grid">
+            <li class="col-md-4 col-sm-4  col-sm-6  img-thumbnail">
+              <figure class=""><img src="assets/image/28.avif" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/image/27.avif" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4  col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/image/26.webp" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=" "><img src="assets/image/5.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/image/23.jpg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/image/15.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/image/16.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4  col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/image/12.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/images/2.jpg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=" "><img src="assets/image/1.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=" "><img src="assets/image/20.avif" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=" "><img src="assets/image/18.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=" "><img src="assets/image/10.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+            <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
+              <figure class=""><img src="assets/image/6.jpeg" alt="" class="img-fluid" onclick="openLightbox(this)">
+
+            </li>
+          </ul>
+          <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+          </div>
         </div>
       </div>
     </div>
-    <div class="crumb">
-      <div class="container">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="sep">/</li>
-          <li> Projects </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <div class="container">
-    <div class="projects-gallery">
-      <div class="row">
-        <ul class="grid effect-4" id="grid">
-          <li class="col-md-4 col-sm-4  col-sm-6  img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/1.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/2.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4  col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/3.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up "><img src="assets/images/4.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/5.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/6.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/7.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4  col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/8.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/9.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up "><img src="assets/images/10.jpg" alt="" class="img-fluid" >
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up "><img src="assets/images/11.jpg" alt="" class="img-fluid" >
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4  col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up "><img src="assets/images/12.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up "><img src="assets/images/13.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="col-md-4 col-sm-4 col-sm-6 img-thumbnail">
-            <figure class="imghvr-hinge-up"><img src="assets/images/14.jpg" alt="" class="img-fluid">
-              <figcaption>
-                <h3>Lorem Ipsum is simply</h3>
-                <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</p>
-                <p><a href="project-single.html">Read More</a></p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!--Contact us-->
-  <section id="call-to-action" class="call-to-action bg-color dark text-center" data-speed="5" data-type="background" aria-label="call-to-action"> <h6 data-aos="fade-up"><a href="contact-us.html" class="btn btn-line-black btn-big hvr-sweep-to-left">Contact us</a></h6> </section>
-  <!--Contact us-->
-</main>
-<!--main-->
-<!--footer-->
-<footer>
+    <!--Contact us-->
+    <section id="call-to-action" class="call-to-action bg-color dark text-center" data-speed="5" data-type="background"
+      aria-label="call-to-action">
+      <h6 data-aos="fade-up"><a href="contact-us.html" class="btn btn-line-black btn-big hvr-sweep-to-left">Contact
+          us</a></h6>
+    </section>
+    <!--Contact us-->
+  </main>
+  <!--main-->
+  <!--footer-->
+  <footer>
   <!--footer-div-->
   <div class="footer-div">
-    <div class="container">
+    <div class="">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up">
-          <div><img src="assets/img/logo.png" class="logo-small img-fluid" alt="img" title="img"></div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
-        </div>
+          <div><img src="assets/img/logoms.png" class="logo-small img-fluid" alt="img" title="img" style="height: 150px;"> <span style="font-size: 28px;color: green;">M & S Official</span> </div>
+
+           </div>
         <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up"  data-aos-delay="400">
           <div class="widget widget_recent_post">
             <h3>Latest News</h3>
             <ul>
-              <li><a href="#">Pellentesque faucibus quam at enim varius gravida.</a></li>
-              <li><a href="#">Ut et lorem nec augue gravida pharetra sed ac enim.</a></li>
-              <li><a href="#">Vestibulum vestibulum erat eu lorem semper.</a></li>
-              <li><a href="#">Vestibulum cursus ex a orci hendrerit, non.</a></li>
-              <li><a href="#">In eu eros tincidunt, luctus diam non, semper quam.</a></li>
+              <li><a href="#">New 3D POP Ceiling Collection Launched (2025).</a></li>
+              <li><a href="#">LED Cove Lighting with POP – Most Demanded in 2025</a></li>
+              <li><a href="#">Eco-Friendly POP Materials Introduced</a></li>
+              <li><a href="#">Special Offer on False Ceiling Services</a></li>
+              
             </ul>
           </div>
         </div>
@@ -262,8 +312,12 @@
           <h3>Contact Us</h3>
           <div class="widget widget-address">
             <address>
-            <span>385 "SHUBHAM" NEW ADARSH COLONY Near
-            MR4 Road, I/F Gajannan Park </span> <span><strong>Phone:</strong>(208) 333 9296</span> <span><strong>Fax:</strong>(208) 333 9298</span> <span><strong>Email:</strong><a href="mailto:contact@StudioUX.com">contact@StudioUX.com</a></span> <span><strong>Web:</strong><a href="#">http://interior&furniture.com</a></span>
+            <span>Building No. 278:88 Road/Street: Aishbagh Road Nearby Landmark: Bharat Dharamkanta Locality/Sub
+                  Locality: Habib Nagar Moti Jheel
+                  District: Lucknow
+                  City/Town/Village: Lucknow e
+                  State: Uttar Pradesh
+                  PIN Code: 220004</span> <span><strong>Phone:</strong>(+91) 7355645091</span> <span><strong>Email:</strong><a href="mailto:contact@StudioUX.com">contact@StudioUX.com</a></span> <span><strong>Web:</strong><a href="#">http://interior&furniture.com</a></span>
             </address>
           </div>
         </div>
@@ -274,7 +328,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-6 footer-c"> &copy; Copyright 2023  - Interior &amp; Furniture Design by Studio UX </div>
+        <div class="col-md-8 col-sm-6 footer-c"> &copy; Copyright 2023  - Interior &amp; POP Design by MS Official </div>
         <div class="col-md-4  col-sm-6 footer-c text-end">
           <div class="social-icons"> <a href="#"><i class="fa fa-facebook fa-lg"></i></a> <a href="#"><i class="fa fa-twitter fa-lg"></i></a> <a href="#"><i class="fa fa-rss fa-lg"></i></a> <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> <a href="#"><i class="fa fa-skype fa-lg"></i></a> <a href="#"><i class="fa fa-dribbble fa-lg"></i></a> </div>
         </div>
@@ -283,25 +337,37 @@
   </div>
   <!--footer-div-->
 </footer>
-<!--footer-->
-<!-- Js File -->
-<script src="assets/aos/aos.js"></script>
-<link href="assets/aos/aos.css" rel="stylesheet">
-<script src="assets/aos/aos-script.js"></script> 
+  <!--footer-->
+  <!-- Js File -->
 
-<script  src="assets/js/jquery-2.2.4.min.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/css/component.css">
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/classie.js"></script>
-<script src="assets/js/cbpAnimatedHeader.js"></script>
-<script src="assets/js/masonry.pkgd.min.js"></script>
-<script src="assets/js/imagesloaded.js"></script>
-<script src="assets/js/classie.js"></script>
-<script src="assets/js/AnimOnScroll.js"></script>
-<script src="assets/js/scroll.js"></script>
-<script src="assets/js/modernizr.custom.js"></script>
-<!-- Js File -->
+  <script>
+    function openLightbox(imgElement) {
+      document.getElementById("lightbox").style.display = "block";
+      document.getElementById("lightbox-img").src = imgElement.src;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+  <script src="assets/aos/aos.js"></script>
+  <link href="assets/aos/aos.css" rel="stylesheet">
+  <script src="assets/aos/aos-script.js"></script>
+
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/component.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/cbpAnimatedHeader.js"></script>
+  <script src="assets/js/masonry.pkgd.min.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/AnimOnScroll.js"></script>
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/modernizr.custom.js"></script>
+  <!-- Js File -->
 </body>
 
 <!-- Mirrored from studioux.in/studiouxhtmltemplate/interior&furniture/html/gray-version/projects-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 17:21:50 GMT -->
+
 </html>

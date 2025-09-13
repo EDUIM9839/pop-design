@@ -16,6 +16,7 @@
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
+	    margin: 5px;
 }
 
 /* Common style */
@@ -283,6 +284,7 @@ figure.effect-roxy:hover p {
 
 figure.effect-bubba {
 	background: #000;
+	height: 300px;
 }
 
 figure.effect-bubba img {
