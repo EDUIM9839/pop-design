@@ -59,7 +59,7 @@
     .social-icons1 {
       position: fixed;
       top: 20%;
-      left: 10px;
+      right: 10px;
       /* transform: translateY(-50%); */
       display: flex;
       flex-direction: column;
@@ -90,6 +90,13 @@
     .social-icons1 a:hover {
       opacity: 0.8;
     }
+    /* Hide text on screens smaller than 768px (mobile/tablet) */
+@media (max-width: 767px) {
+  .logo-text {
+    display: none;
+  }
+}
+
   </style>
   <!--css-->
 </head>
@@ -102,7 +109,7 @@
       <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-default fixed-top"
         aria-label="Sixth navbar example">
         <div class="container page-scroll"> <a class="navbar-brand" href="index.html"><img src="assets/img/logoms.png"
-              alt="" title="" style="height: 100px;margin: -45px;"></a>
+              alt="" title="" style="height: 95px;margin: -25px;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
             aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation"> <span
               class="navbar-toggler-icon"></span> </button>
@@ -303,11 +310,13 @@
   <footer>
   <!--footer-div-->
   <div class="footer-div">
-    <div class="">
+    <div class="px-3">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up">
-          <div><img src="assets/img/logoms.png" class="logo-small img-fluid" alt="img" title="img" style="height: 150px;"> <span style="font-size: 28px;color: green;">M & S Official</span> </div>
-
+         <div class="logo-wrapper">
+  <img src="assets/img/logoms.png" class="logo-small img-fluid" alt="img" title="img" style="height: 150px;">
+  <span class="logo-text" style="font-size: 20px; color: green;">M & S Official</span>
+</div>
            </div>
         <div class="col-md-4 col-sm-4 col-xs-6" data-aos="fade-up"  data-aos-delay="400">
           <div class="widget widget_recent_post">
