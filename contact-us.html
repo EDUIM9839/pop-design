@@ -14,7 +14,34 @@
 <!--css-->
 <link href="assets/css/all-css.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    #whatsappBtn {
+      position: fixed;
+      top: 140px;
+      /* distance from top */
+      right: 20px;
+      /* distance from right */
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
 
+    #whatsappBtn img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #whatsappBtn:hover {
+      transform: scale(1.1);
+    }
+  </style>
 <style>
   .bg-light {
     --bs-bg-opacity: 1;
@@ -99,7 +126,10 @@
   </div>
 <!--header-->
 
- 
+ <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/8543904001" target="_blank" id="whatsappBtn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
 <!--main-->
 <main>
   <!--subheader-->
